@@ -6,7 +6,7 @@ There are two methods for getting started with this repo.
 
 ```
   > git clone git@github.com:SpecialKcl/React-Redux-GitHub-User-Search.git
-  > cd React-Redux-Simple-Starter
+  > cd React-Redux-GitHub-User-Search
   > npm install
   > npm start
   > in your Browser open http://localhost:8080
