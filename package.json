@@ -3,8 +3,18 @@
   "version": "1.0.0",
   "description": "Simple Github Repo Search by Username",
   "main": "index.js",
-  "repository": "",
-  "scripts": {
+  "repository": "https://github.com/KaiHotz/React-Redux-GitHub-User-Search",
+  "author": "Kai Hotz",
+  "license": "",
+  "standard": {
+    "parser": "babel-eslint",
+    "env": [
+      "jest"
+    ],
+    "globals": [
+      "fetch"
+    ]
+  },  "scripts": {
     "clean": "rimraf dist",
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "watch": "npm run start -- --watch",
@@ -13,8 +23,6 @@
     "test:watch": "npm run test -- --watch",
     "build": "NODE_ENV=production npm run clean && webpack -p"
   },
-  "author": "",
-  "license": "",
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^8.0.1",
