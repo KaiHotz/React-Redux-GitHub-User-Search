@@ -1,24 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import { compose, createStore, applyMiddleware } from 'redux'
-import promise from 'redux-promise'
-
-import reducers from './reducers'
-import GitSearch from './components/git_search'
+import configureStore from './store'
+import App from './containers/App'
 
 import '@/style/style.scss'
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const store = configureStore()
 
-const store = createStore(reducers, composeEnhancers(
-  applyMiddleware(promise)
-))
+const render = Component => {
+  ReactDOM.render(
+    <Provider store={store}>
+      <Component />
+    </Provider>
+    , document.querySelector('.container')
+  )
+}
 
-ReactDOM.render(
-  <Provider store={store}>
-    <div>
-      <GitSearch />
-    </div>
-  </Provider>
-  , document.getElementById('root'))
+render(App)
+
+if (module.hot) {
+  module.hot.accept('./containers/App', () => {
+    const App = require('./containers/App').default
+    render(App)
+  })
+}

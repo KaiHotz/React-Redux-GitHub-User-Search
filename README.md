@@ -9,7 +9,7 @@ There are two methods for getting started with this repo.
   > cd React-Redux-GitHub-User-Search
   > npm install
   > npm start
-  > in your Browser open http://localhost:8080
+  > in your Browser open http://localhost:3000
 ```
 
 #### Not Familiar with Git?
@@ -18,7 +18,7 @@ Click [here](https://github.com/SpecialKcl/React-Redux-GitHub-User-Search.git) t
 ```
   > npm install
   > npm start
-  > in your Browser open http://localhost:8080
+  > in your Browser open http://localhost:3000
 ```
 
 #### To run Integration Test
