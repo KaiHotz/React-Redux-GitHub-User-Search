@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/KaiHotz/React-Redux-GitHub-User-Search",
   "author": "Kai Hotz",
-  "license": "",
+  "license": "ISC",
   "standard": {
     "parser": "babel-eslint",
     "env": [

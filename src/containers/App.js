@@ -4,12 +4,8 @@ import { fetchRepos } from '@/src/actions'
 import RepoListElement from '@/src/components/RepoListElement'
 
 class App extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      userName: ''
-    }
+  state = {
+    userName: ''
   }
 
   onInputChange (userName) {
