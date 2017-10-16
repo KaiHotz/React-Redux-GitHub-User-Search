@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
-import { fetchRepos } from '../actions'
-import RepoListElement from '../components/RepoListElement'
+import { fetchRepos } from '@/src/actions'
+import RepoListElement from '@/src/components/RepoListElement'
 
 class App extends Component {
   constructor (props) {

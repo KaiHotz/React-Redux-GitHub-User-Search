@@ -1,5 +1,5 @@
 import _ from 'lodash'
-import { FETCH_REPOS } from '../actions'
+import { FETCH_REPOS } from '@/src/actions'
 
 export default function (state = {}, action) {
   switch (action.type) {

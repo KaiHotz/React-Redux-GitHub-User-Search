@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
-import configureStore from './store'
-import App from './containers/App'
+import configureStore from '@/src/store'
+import App from '@/src/containers/App'
 
-import '@/style/style.scss'
+import '@/styles/styles.scss'
 
 const store = configureStore()
 
