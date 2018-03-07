@@ -4,13 +4,8 @@ import { fetchRepos } from '@/src/actions'
 import RepoListElement from '@/src/components/RepoListElement'
 
 class App extends Component {
-  state = {
-    userName: ''
-  }
-
-  onInputChange (userName) {
-    this.setState({userName})
-    this.props.fetchRepos(userName)
+  onInputChange = () => event => {
+    this.props.fetchRepos(event.target.value)
   }
 
   render () {
@@ -19,8 +14,7 @@ class App extends Component {
         <div className='search-bar'>
           <input
             placeholder="Enter a Github User's name"
-            value={this.state.userName}
-            onChange={event => this.onInputChange(event.target.value)}
+            onChange={this.onInputChange()}
             type='text'
           />
         </div>
@@ -36,10 +30,8 @@ class App extends Component {
   }
 }
 
-function mapStateToProps ({ repos }) {
-  return {
-    repos
-  }
-}
+const mapStateToProps = ({ repos }) => ({
+  repos
+})
 
 export default connect(mapStateToProps, { fetchRepos })(App)
