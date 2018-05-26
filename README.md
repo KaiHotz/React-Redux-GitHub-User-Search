@@ -5,7 +5,7 @@ There are two methods for getting started with this repo.
 #### Familiar with Git?
 
 ```
-  > git clone git@github.com:SpecialKcl/React-Redux-GitHub-User-Search.git
+  > git clone git@github.com:KaiHotz/React-Redux-GitHub-User-Search.git
   > cd React-Redux-GitHub-User-Search
   > npm install
   > npm start
@@ -13,7 +13,7 @@ There are two methods for getting started with this repo.
 ```
 
 #### Not Familiar with Git?
-Click [here](https://github.com/SpecialKcl/React-Redux-GitHub-User-Search.git) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
+Click [here](https://github.com/KaiHotz/React-Redux-GitHub-User-Search.git) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
 
 ```
   > npm install
